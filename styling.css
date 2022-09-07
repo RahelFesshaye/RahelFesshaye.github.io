@@ -32,3 +32,8 @@
 #link1{
     color: #a4a400;
 }
+#Background{
+    background-image: repeat;
+    z-index: -2;
+    position: fixed;
+}
