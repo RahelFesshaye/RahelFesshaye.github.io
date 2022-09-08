@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+#header{
+    grid-area: head;
+    background-color: rgb(25, 91, 132);
+    text-align: center;
+    font: bold;
+    color: black;
+    height: 100px;
+}
+    #menu{
+        grid-area: menu;
+        background-color: darkslategrey;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        color: white;
+    }
+
+
+#column{
+    display: flex;
+    height: 300px;
+    grid-area: column;
+    flex-direction: row;
+   
+    
+    
+    
+}
+ 
+#column1{
+    background-color: darkgray;
+    width: 200px;
+    
+    
+}
+
+#column2{
+    width: 600px;
+    background-color:#bbbbbb
+}
+#column3{
+    
+    background-color:#cccccc;
+    width: 600px;
+    
+}
+
+    
+
+#footer{
+    grid-area: footer;
+    background-color: darkslategrey ;
+    text-align: center;
+    height: 100px;
+    color: white;
+    font: bolder;
+}
+
+
+
+#menu1{
+    grid-area: menu1;
+    width: 60px;
+    border-right: 1px solid black;
+}
+
+#menu2{
+    grid-area: menu2;
+    width: 70px;
+    border-right: 1px solid black;
+}
+
+#menu3{
+    grid-area: menu3;
+    width: 60px;
+    border-right: 1px solid black;
+}
+
+@media only screen and (min-width: 600px){
+    #container{
+        flex-direction: row;
+        font-size: 20px;
+        height: 300px;
+        display: grid;
+        margin: 3%;
+        grid-template-areas:
+        'head head head head'
+        'head head head head'
+        'menu menu menu menu'
+        'column column column column'
+        'column column column column'
+        'column column column column'
+        'footer footer footer footer'
+        'footer footer footer footer'
+    
+    }
+
+}
+@media only screen and (max-width: 600px){
+    #container{
+        flex-direction: row;
+        font-size: 20px;
+        height: 300px;
+        display: grid;
+        margin: 3%;
+        grid-template-areas:
+        'head head head head'
+        'head head head head'
+        'menu menu menu menu'
+        'column column column column'
+        'column column column column'
+        'column column column column'
+        'footer footer footer footer'
+        'footer footer footer footer'
+    
+    }
+#column{
+    display: flex;
+    flex-direction: reverse;
+}
+
+
+}
